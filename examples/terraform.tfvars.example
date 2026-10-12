@@ -1,0 +1,7 @@
+# Copy to terraform.tfvars (git-ignored). Prefer TF_VAR_subscription_id instead.
+subscription_id = "00000000-0000-0000-0000-000000000000"
+
+allowed_locations      = ["eastus"]
+required_tag_name      = "Owner"
+enforce_required_tag   = false   # report only; set true to deny untagged resource groups
+database_policy_effect = "Audit" # move to "Deny" once the compliance report is clean
