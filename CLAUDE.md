@@ -13,5 +13,5 @@ Repo público con 3 guardrails de Azure Policy en Terraform, creado el 2026-10-1
 ## Estado
 
 - `terraform validate` y `fmt` limpios; `plan` de solo lectura contra la suscripción de laboratorio: 4 recursos a crear (iniciativa con 7 referencias y 3 asignaciones), sin errores.
-- **No se ha aplicado nada.** La validación del servidor (que Azure acepte los parámetros) solo ocurre al hacer `apply`.
+- **No se ha aplicado nada y la decisión (2026-10-15) es no aplicarlo en la suscripción de laboratorio:** el repo queda como ejemplo de referencia. La validación del servidor (que Azure acepte los parámetros) solo ocurre al hacer `apply`, así que sigue sin probarse.
 - Hallazgos de la revisión previa de la suscripción: 2 asignaciones existentes (*Allowed locations* y la iniciativa *ASC Default* de Defender for Cloud, 216 políticas), 0 definiciones custom, 0 exenciones.
